@@ -27,6 +27,10 @@ img{
 
 h1{
   font-size: 2.875rem;
+  letter-spacing: 0.2em;
+  width: 100%;
+  margin: 0 auto;
+ 
   font-family: var(--font-family-1);
 }
 h2{
@@ -83,12 +87,12 @@ button:hover,button:focus{
  background-color: var(--secondary);
 }
 .started{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 4em;
 }
 .started button{
+  margin-left: 5em;
+}
+.question{
   margin-left: 1em;
 }
 .answers{
@@ -96,6 +100,7 @@ margin-bottom: 1.5em;
 display: flex;
 color: var(--text-lg);
 background-color: var(--secondary);
+max-width:75%;
 }
 #correct{
   color: var(--secondary);
@@ -125,15 +130,28 @@ background-color: var(--secondary);
 
 /*                                              MEDIA QUERIES                                                                    */
 @media(min-width:600px){
+  h1{
+    text-align: center;
+  }
   h2{
     max-width: 100%;
   }
   .answers{
     display: inline;
     margin-left: 1.5em;
+    max-width: 100%;
   }
   .btn{
     margin-left: 4em;
+  }
+  .started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .started button{
+    margin-left: 1em;
   }
 }
 

@@ -30,9 +30,9 @@ function handleAnswer(answer) {
 })
 
     return(     
-    <div className="container" >
+    <div className="container question" >
         <div className="col">
-        <h2>{props.question.question.replace(/&quot;|&#039;/g,"").replace(/&eacute;/,'e')}</h2>
+        <h2>{props.question.question.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;/g,"").replace(/&eacute;/,'e')}</h2>
         <br></br>
                     <div>
                     {answers}
