@@ -96,7 +96,9 @@ function App() {
             {questionEl}
             <br />
             <div className="container">
-            {IsChecked?`correct answer ${IsCorrect}/${questions.length}`:""}
+              <div className="result">
+              {IsChecked?`correct answer ${IsCorrect}/${questions.length}`:""}
+              </div>
             </div>
             <br />
            <button className='btn' onClick={IsChecked?tryAgain:Check} >{IsChecked?'Try Again':'Check'}</button>

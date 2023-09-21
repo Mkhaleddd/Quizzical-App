@@ -24,7 +24,7 @@ function handleAnswer(answer) {
        onClick={()=>handleAnswer(answer)}  
        id={id} 
        className="answers"
-       >{answer.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;/g,"")}</button>
+       >{answer.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;|&shy;|&rdquo;|&ldquo;/g,"")}</button>
     )
 
 })
@@ -32,7 +32,7 @@ function handleAnswer(answer) {
     return(     
     <div className="container question" >
         <div className="col">
-        <h2>{props.question.question.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;/g,"").replace(/&eacute;/,'e')}</h2>
+        <h2>{props.question.question.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;|&shy;|&rdquo;|&ldquo;/g,"").replace(/&eacute;/,'e')}</h2>
         <br></br>
                     <div>
                     {answers}
