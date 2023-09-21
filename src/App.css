@@ -24,7 +24,10 @@ body{
 img{
   max-width: 60%;
 }
-
+main{
+  overflow-x: hidden;
+  
+}
 h1{
   font-size: 2.875rem;
   letter-spacing: 0.2em;
