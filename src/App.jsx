@@ -87,7 +87,7 @@ function App() {
            <img src={blobLg} alt="blob-animation" className='blob-lg' /> 
            </div>
         {!started ?
-        <section  className="col started" aria-label='Started'>
+        <section  className="container started" aria-label='Started'>
           <h1 className='title'>Quizzical</h1> 
           <button className='btn' onClick={()=>setStarted(!started)}>Start</button>
         </section>

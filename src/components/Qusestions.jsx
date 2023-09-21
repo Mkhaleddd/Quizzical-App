@@ -24,7 +24,7 @@ function handleAnswer(answer) {
        onClick={()=>handleAnswer(answer)}  
        id={id} 
        className="answers"
-       >{answer.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;/g,"")}</button>
+       >{answer.replace(/&quot;|&#039;|&iuml;|&amp;|&deg;|&Prime;|&prime;/g,"")}</button>
     )
 
 })

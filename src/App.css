@@ -26,13 +26,13 @@ img{
 }
 
 h1{
-  line-height: 1.5;
   font-size: 2.875rem;
   font-family: var(--font-family-1);
 }
 h2{
 font-size: 2rem;
 line-height: 1.5;
+max-width: 80%;
 font-family: var(--font-family-1);
 color: var(--accent);
 }
@@ -79,7 +79,7 @@ button:hover,button:focus{
 }
 .btn{
  margin-top:1em;
- margin-left: 3em;
+ margin-left: 2em;
  background-color: var(--secondary);
 }
 .started{
@@ -125,9 +125,15 @@ background-color: var(--secondary);
 
 /*                                              MEDIA QUERIES                                                                    */
 @media(min-width:600px){
+  h2{
+    max-width: 100%;
+  }
   .answers{
     display: inline;
     margin-left: 1.5em;
+  }
+  .btn{
+    margin-left: 4em;
   }
 }
 
