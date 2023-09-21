@@ -83,8 +83,8 @@ function App() {
       <>
        <main className='container' >
           <div className="blob ">
-            <img src={blobDark} alt="blob-animation" className='blob-dark'/>
-           <img src={blobLg} alt="blob-animation" className='blob-lg' /> 
+            <img src={blobDark} alt="blob-animation" height="100%" width="100%" className='blob-dark'/>
+           <img src={blobLg} alt="blob-animation"  height="100%" width="100%" className='blob-lg' /> 
            </div>
         {!started ?
         <section  className="started" aria-label='Started'>
